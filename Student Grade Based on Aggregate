@@ -1,0 +1,26 @@
+# Read four space-separated integers
+marks = list(map(int, input().split()))
+
+# Calculate total marks
+total = sum(marks)
+
+# Calculate aggregate percentage
+aggregate = total / 4
+
+# Determine grade based on aggregate percentage
+if aggregate > 75:
+    grade = "Distinction"
+elif aggregate >= 60 and aggregate < 75:
+    grade = "First Division"
+elif aggregate >= 50 and aggregate < 60:
+    grade = "Second Division"
+elif aggregate >= 40 and aggregate < 50:
+    grade = "Third Division"
+else:
+    grade = "Fail"
+
+# Print results
+print(total)
+print(f"{aggregate:.2f}")
+print(grade)
+
