@@ -1,0 +1,8 @@
+# Read three integers (one per line)
+a = int(input())
+b = int(input())
+c = int(input())
+
+# Find and print the largest number
+print(max(a, b, c))
+
